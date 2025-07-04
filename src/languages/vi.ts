@@ -1,0 +1,6 @@
+export default {
+    home: "Trang chủ",
+    projects: "Dự án",
+    blogs: "Tin tức",
+    contact: "Liên lạc"
+}

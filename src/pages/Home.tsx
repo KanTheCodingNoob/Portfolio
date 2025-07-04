@@ -1,8 +1,10 @@
+import Navigation from "../components/Navigation.tsx";
+
 function Home() {
 
   return (
       <>
-          Home
+          <Navigation />
       </>
   )
 }
