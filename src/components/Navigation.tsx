@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import {useContext} from "react";
+import LanguageContext from "../contexts/languageContext.ts";
 
 export default function Navigation() {
+    const language = useContext(LanguageContext);
+
     return (
         <nav className="flex justify-between w-full fixed border">
             <div>
@@ -14,7 +18,7 @@ export default function Navigation() {
             <div>
                 <ul className="flex gap-3 items-center justify-between">
                     <li>
-                        EN
+                        <button className="cursor-pointer">EN</button>
                     </li>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
