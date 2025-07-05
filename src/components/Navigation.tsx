@@ -1,9 +1,6 @@
 import { Link } from "react-router-dom";
-import {useContext} from "react";
-import LanguageContext from "../contexts/languageContext.ts";
 
 export default function Navigation() {
-    const language = useContext(LanguageContext);
 
     return (
         <nav className="flex justify-between w-full fixed border">
