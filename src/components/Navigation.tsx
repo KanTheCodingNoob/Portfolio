@@ -1,21 +1,31 @@
 import { Link } from "react-router-dom";
+import {useTranslation} from "react-i18next";
+import i18n, {changeLanguage} from "i18next";
 
 export default function Navigation() {
+    const {t} = useTranslation();
 
     return (
         <nav className="flex justify-between w-full fixed border">
             <div>
                 <ul className="flex gap-3 items-center justify-between">
-                    <li><Link to={"/"}>Home</Link></li>
-                    <li><Link to={"/projects"}>Projects</Link></li>
-                    <li><Link to={"/blogs"}>Blogs</Link></li>
-                    <li><Link to={"/contact"}>Contact</Link></li>
+                    <li><Link to={"/"}>{t('home')}</Link></li>
+                    <li><Link to={"/projects"}>{t('projects')}</Link></li>
+                    <li><Link to={"/blogs"}>{t('blogs')}</Link></li>
+                    <li><Link to={"/contact"}>{t('contact')}</Link></li>
                 </ul>
             </div>
             <div>
                 <ul className="flex gap-3 items-center justify-between">
                     <li>
-                        <button className="cursor-pointer">EN</button>
+                        {i18n.language === 'en' && <button
+                            className="cursor-pointer"
+                            onClick={()=> changeLanguage('vi')}
+                        >EN</button>}
+                        {i18n.language === 'vi' && <button
+                            className="cursor-pointer"
+                            onClick={()=> changeLanguage('en')}
+                        >VI</button>}
                     </li>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
