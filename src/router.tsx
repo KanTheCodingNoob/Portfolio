@@ -5,7 +5,6 @@ import Blogs from "./pages/Blogs.tsx";
 import Contact from "./pages/Contact.tsx";
 import LostTraveller from "./pages/LostTraveller.tsx";
 import Layout from "./components/Layout.tsx";
-import PDF from "./pages/PDF.tsx";
 
 const router = createBrowserRouter([
     {
@@ -18,10 +17,6 @@ const router = createBrowserRouter([
             {path: "contact", element: <Contact />},
             {path: "*", element: <LostTraveller />}
         ]
-    },
-    {
-        path: "/resume.pdf",
-        element: <PDF />
     }
 ])
 

@@ -4,8 +4,8 @@ import Navigation from "./Navigation.tsx";
 const Layout = () => (
     <>
         <Navigation />
-        <div className="mt-16">
-            <main className="px-4">
+        <div className="mt-16 px-4">
+            <main>
                 <Outlet />
             </main>
         </div>

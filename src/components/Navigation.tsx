@@ -6,7 +6,7 @@ export default function Navigation() {
     const {t} = useTranslation();
 
     return (
-        <nav className="flex justify-between w-full fixed top-0 left-0 border">
+        <nav className="flex justify-between w-full fixed top-0 left-0 border bg-white">
             <div>
                 <ul className="flex gap-3 items-center justify-between">
                     <li><Link to={"/"}>{t('home')}</Link></li>
@@ -21,11 +21,11 @@ export default function Navigation() {
                         {i18n.language === 'en' && <button
                             className="cursor-pointer"
                             onClick={()=> changeLanguage('vi')}
-                        >EN</button>}
+                        >VI</button>}
                         {i18n.language === 'vi' && <button
                             className="cursor-pointer"
                             onClick={()=> changeLanguage('en')}
-                        >VI</button>}
+                        >EN</button>}
                     </li>
                     <li>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
