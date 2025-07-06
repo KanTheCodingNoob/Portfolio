@@ -6,7 +6,7 @@ export default function Navigation() {
     const {t} = useTranslation();
 
     return (
-        <nav className="flex justify-between w-full fixed top-0 left-0 border bg-white">
+        <nav className="flex justify-between w-full fixed top-0 left-0 border bg-white px-2">
             <div>
                 <ul className="flex gap-3 items-center justify-between">
                     <li><Link to={"/"}>{t('home')}</Link></li>
