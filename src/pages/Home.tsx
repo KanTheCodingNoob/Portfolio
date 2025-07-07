@@ -10,9 +10,9 @@ function Home() {
 		<div className="flex flex-col items-center w-full h-screen space-y-4">
 			<div className="flex h-50 items-center">
 				<div className="flex-1">
-					<h1>Hiya, my name is Khanh An</h1> <br />
-					<p>20 years old software engineer from Vietnam</p> <br />
-					<p>Full-stack developer and AI engineer at your service</p> <br />
+					<h1>Hiya, my name is Khanh An, ✌️</h1> <br />
+					<p>20 years old software engineer from Vietnam 🇻🇳</p> <br />
+					<p>Specialise in frontend development and dabble in full-stack on the side</p> <br />
 					<div className="space-x-3">
 						<Link to={"/resume.pdf"} target={"_blank"}>
 							Resume

@@ -2,8 +2,8 @@ import {Link} from "react-router-dom";
 
 export default function Footer(){
 	return (
-		<footer className="flex justify-between px-2 w-full">
-			<p>© 2025 nguyenkhanhan.com</p>
+		<footer className="flex justify-between px-2 w-full pt-20">
+			<p>© 2025 <a href="/">nguyenkhanhan.com</a></p>
 			<div className="space-x-3">
 				<Link to={"/resume.pdf"} target={"_blank"}>
 					Resume
