@@ -9,5 +9,38 @@
   "introContent2": "Specialise in Frontend Development and dabble in Full Stack on the side",
 
   "experience": "Experience",
-  "education": "Education"
+  "education": "Education",
+
+  "DAJobTitle": "LLM Respond Reviewer",
+  "DADescription": [
+    "Evaluated and compared responses from two initial LLM models to assess accuracy, coherence, and relevance.",
+    "Provided detailed feedback on model outputs, highlighting strengths and areas for improvement.",
+    "Designed and applied additional prompts to test model behavior in varied contexts."
+  ],
+
+  "degree": "Bachelor of Engineering (Software Engineering)",
+  "eduInfo": [
+    "Minor: Artificial Intelligence and Machine Learning",
+    "GPA: 3.4/4.0"
+  ],
+
+  "technologies": "Technologies",
+  "languages": "Languages",
+  "frameworks": "Frameworks",
+
+  "EMA": "Event Management Application (2nd Year)",
+  "EMADescription": "A web application for joining, hosting and managing event.",
+
+  "TIM": "Thao Inventory Management",
+  "TIMDescription": "A desktop application for local inventory management with import feature from XLSX to SQL tables.",
+
+  "contactHeader": "Reach Out Below",
+  "contactInfo": "Contact Info",
+  "phone": "Phone",
+  "location": "Location",
+  "actualLocation": "District 7, Ho Chi Minh City",
+  "formHeader": "Leave a message here",
+  "name": "Name",
+  "textAreaPlaceholder": "Feel free to provide career opportunities here, or simply just say hello",
+  "send": "Send"
 }

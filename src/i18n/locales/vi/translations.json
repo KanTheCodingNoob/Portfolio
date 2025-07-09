@@ -9,5 +9,37 @@
   "introContent2": "Chuyên phát triển Frontend và Full Stack",
 
   "experience": "Kinh Nghiệm",
-  "education": "Giáo Dục"
+  "education": "Giáo Dục",
+
+  "DAJobTitle": "Review Phản Hồi LLM",
+  "DADescription": [
+    "So sánh và đánh giá phản hồi của hai LLM để kiểm tra độ chính xác, lưu lạc và hợp lý của chúng.",
+    "Đưa đánh giá chi tiết về phản hồi của model, xem xét điểm mạnh và điểm cần chú ý.",
+    "Thiết kế và áp dụng thêm câu lệnh để kiểm tra hành động của model vào nhiều tình huống khác nhau."
+  ],
+
+  "Degree": "Kỹ sư (Kỹ thuật phần mềm)",
+  "EduInfo": [
+    "Chuyên ngành phụ: Trí tuệ nhân tạo và học máy",
+    "GPA: 3.4/4.0"
+  ],
+
+  "technologies": "Công nghệ",
+  "languages": "Ngôn ngữ",
+  "frameworks": "Frameworks",
+
+  "EMA": "Quản Lý Sự Kiện (Năm 2)",
+  "EMADescription": "Ứng dụng trang web tổ chức, bố trí và gia nhập sự kiện.",
+  "TIM": "Quản Lý Phụ Tùng Thảo",
+  "TIMDescription": "Ứng dụng desktop cho quản lý phụ tùng với chức năng nhập bảng XLSX thành bảng SQL.",
+
+  "contactHeader": "Liên Hệ Bên Dưới",
+  "contactInfo": "Thông tin liên lạc",
+  "phone": "SĐT",
+  "location": "Địa Chỉ",
+  "actualLocation": "Quận 7, Thành Phố Hồ Chí Minh",
+  "formHeader": "Gửi lời nhắn ở đây",
+  "name": "Tên",
+  "textAreaPlaceholder": "Đừng do dự gửi cơ hội việc làm ở đây, hoặc gửi lời xin chào cũng được",
+  "send": "Gửi"
 }

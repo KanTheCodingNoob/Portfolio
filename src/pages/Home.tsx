@@ -42,11 +42,10 @@ function Home() {
 						<ExperienceListCard
 							imageURL = "companyLogo/RMITLogo.png"
 							companyURL = "https://www.rmit.edu.vn/"
-							time = "November 2023 - September 2027 (expected)"
+							time = "09/2023 - 07/2027 (expected)"
 							name = "RMIT Univerity"
-							role = "Bachelor of Engineering (Software Engineering)"
-							descriptions = {["Minor: Artificial Intelligence and Machine Learning",
-								"GPA: 3.4/4.0"]}
+							role = {t("degree")}
+							descriptions = {t('eduInfo', {returnObjects: true }) as string[]}
 						/>
 					</div>
 				}
@@ -55,20 +54,17 @@ function Home() {
 						<ExperienceListCard
 							imageURL="companyLogo/DataAnnotationLogo.jpg"
 							companyURL="https://www.dataannotation.tech/"
-							time="5/2023 - Current"
+							time="05/2023 - Current"
 							name="DataAnnotation"
-							role="LLM Respond Reviewer"
-							descriptions={["Evaluated and compared responses from two initial LLM models to assess accuracy, coherence, and relevance.",
-								"Provided detailed feedback on model outputs, highlighting strengths and areas for improvement.",
-								"Designed and applied additional prompts to test model behavior in varied contexts.",
-								"Identified inconsistencies, biases, and potential failure cases to enhance model performance."]}
+							role={t('DAJobTitle')}
+							descriptions={t('DADescription', {returnObjects: true }) as string[]}
 						/>
 					</div>
 				}
 			</div>
 			<div className="flex flex-col items-center w-full">
-				<h1 className="font-bold">Technologies</h1>
-				<h2>Languages</h2>
+				<h1 className="font-bold">{t('technologies')}</h1>
+				<h2>{t('languages')}</h2>
 				<ul className="flex space-x-2">
 					<li><img src="/languageIcon/cpp.png" height="60" width="60" alt="C++"/></li>
 					<li><img src="/languageIcon/rust.png" height="60" width="60" alt="Rust"/></li>
@@ -83,12 +79,6 @@ function Home() {
 					<li><img src="/languageIcon/spring.png" height="60" width="60" alt="Spring"/></li>
 					<li><img src="/languageIcon/tailwind.png" height="60" width="60" alt="Tailwind"/></li>
 				</ul>
-			</div>
-			<div>
-				<h1>Featured Projects</h1>
-			</div>
-			<div>
-				<h1>Recent Posts</h1>
 			</div>
 			<Footer />
 		</div>

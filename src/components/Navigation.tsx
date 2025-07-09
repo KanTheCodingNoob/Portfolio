@@ -9,7 +9,7 @@ export default function Navigation() {
     const {theme, setTheme} = useThemeContext();
 
     return (
-        <nav className="flex justify-between w-full fixed top-0 left-0 border px-2">
+        <nav className="flex justify-between w-full fixed top-0 left-0 border px-2 backdrop-blur z-50">
             <div>
                 <ul className="flex gap-3 items-center justify-between">
                     <li><Link to={"/"}>{t('home')}</Link></li>
