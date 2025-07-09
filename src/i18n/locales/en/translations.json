@@ -2,5 +2,12 @@
   "home": "Home",
   "projects": "Projects",
   "blogs": "Blogs",
-  "contact": "Contact"
+  "contact": "Contact",
+
+  "introHeader": "Hiya, my name is Khanh An, ✌\uFE0F",
+  "introContent1": "20 years old software engineer from Vietnam \uD83C\uDDFB\uD83C\uDDF3",
+  "introContent2": "Specialise in Frontend Development and dabble in Full Stack on the side",
+
+  "experience": "Experience",
+  "education": "Education"
 }

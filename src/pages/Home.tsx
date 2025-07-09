@@ -2,17 +2,20 @@ import {Link} from "react-router-dom";
 import {useState} from "react";
 import ExperienceListCard from "../components/ExperienceListCard.tsx";
 import Footer from "../components/Footer.tsx";
+import {useTranslation} from "react-i18next";
 
 function Home() {
-	const [tab, setTab] = useState<string>("exp")
+	const [tab, setTab] = useState<string>("exp");
+
+	const {t} = useTranslation();
 
 	return (
 		<div className="flex flex-col items-center w-full h-screen space-y-4">
-			<div className="flex h-50 items-center">
-				<div className="flex-1">
-					<h1>Hiya, my name is Khanh An, ✌️</h1> <br />
-					<p>20 years old software engineer from Vietnam 🇻🇳</p> <br />
-					<p>Specialise in frontend development and dabble in full-stack on the side</p> <br />
+			<div className="flex h-50 items-center space-x-4 justify-around">
+				<div className="flex-1 w-120">
+					<h1>{t('introHeader')}</h1> <br />
+					<p>{t('introContent1')}</p>
+					<p>{t('introContent2')}</p>
 					<div className="space-x-3">
 						<Link to={"/resume.pdf"} target={"_blank"}>
 							Resume
@@ -25,14 +28,14 @@ function Home() {
 						</Link>
 					</div>
 				</div>
-				<div className="flex-1">
-					Placeholder image
+				<div className="flex-1 border">
+					<h1>Placeholder Image</h1>
 				</div>
 			</div>
 			<div className="space-y-4 flex flex-col items-center w-120">
 				<div className="space-x-5 flex w-full justify-around">
-					<button className="cursor-pointer" onClick={()=>setTab("exp")}>Experience</button>
-					<button className="cursor-pointer" onClick={()=>setTab("edu")}>Education</button>
+					<button className="cursor-pointer" onClick={()=>setTab("exp")}>{t('experience')}</button>
+					<button className="cursor-pointer" onClick={()=>setTab("edu")}>{t('education')}</button>
 				</div>
 				{
 					tab === "edu" && <div>
@@ -52,7 +55,7 @@ function Home() {
 						<ExperienceListCard
 							imageURL="companyLogo/DataAnnotationLogo.jpg"
 							companyURL="https://www.dataannotation.tech/"
-							time="May 2023 - Current"
+							time="5/2023 - Current"
 							name="DataAnnotation"
 							role="LLM Respond Reviewer"
 							descriptions={["Evaluated and compared responses from two initial LLM models to assess accuracy, coherence, and relevance.",

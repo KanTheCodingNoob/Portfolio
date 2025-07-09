@@ -10,7 +10,7 @@ export default function Blogs(){
                     title={"Launch of the portfolio website"}
                     description={"Celebrate the launch of my first website, plus discussion on my plan in term of projects"}
                     postDate={"15 July 2025"}
-                    url={"/blog/launch_of_portfolio"}
+                    url={"/"}
                 />
             </div>
             <Footer />
