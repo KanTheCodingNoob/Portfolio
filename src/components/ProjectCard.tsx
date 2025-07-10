@@ -13,17 +13,19 @@ type ProjectInfo = {
 
 export default function ProjectCard({image, name, description, techStack, link}: ProjectInfo) {
 	return (
-		<div className="border-2 border-gray-200 rounded-lg w-76 p-5 space-y-4">
-			<img src={image} alt={name} className="w-64 h-36 shadow-md"/>
-			<h1 className="font-bold">{name}</h1>
-			<p>{description}</p>
-			<ul className="flex flex-wrap gap-x-2 gap-y-1">
-				{techStack.map((item, i) => (
-					<li key={i} className="bg-gray-200 rounded-lg px-1">
-						{item}
-					</li>
-				))}
-			</ul>
+		<div className="border border-gray-500 rounded-lg w-80 p-5 space-y-4">
+			<img src={image} alt={name} className="w-64 h-36 shadow-md mx-auto"/>
+			<h1 className="font-bold h-12">{name}</h1>
+			<p className="h-24">{description}</p>
+			<div className="h-20">
+				<ul className="flex flex-wrap gap-x-2 gap-y-1">
+					{techStack.map((item, i) => (
+						<li key={i} className="bg-gray-200 text-black rounded-lg px-1">
+							{item}
+						</li>
+					))}
+				</ul>
+			</div>
 			<ul className="flex flex-wrap">
 				{link.map((item, i) => (
 					<li key={i} className="bg-black text-white rounded-lg px-1">

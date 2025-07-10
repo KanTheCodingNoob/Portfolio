@@ -6,9 +6,9 @@ export default function Projects() {
     const {t} = useTranslation();
 
     return (
-        <div className="flex flex-col w-full items-center space-y-4">
-            <h1>{t('projects')}</h1>
-            <div className="flex flex-wrap justify-between w-160">
+        <div className="w-full flex flex-col items-center space-y-4">
+            <h1 className="font-bold text-4xl">{t('projects')}</h1>
+            <div className="flex flex-wrap justify-center w-full gap-6 md:w-170 md:justify-between">
                 <ProjectCard
                     image={"projectImage/EventManagement.png"}
                     name={t('EMA')}
