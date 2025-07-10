@@ -34,7 +34,7 @@ export default function Navigation() {
                         <li>
                             <button
                                 onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-                                className="cursor-pointer mt-2"
+                                className="cursor-pointer mt-1.5"
                             >
                                 {
                                     theme === 'dark' ?
