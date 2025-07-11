@@ -16,7 +16,7 @@ export default function Blogs(){
     return (
         <div className="w-full flex flex-col items-center space-y-4">
             <h1 className="font-bold text-4xl">{t('blogs')}</h1>
-            <div className="w-148 border border-gray-700 rounded-xl divide-y py-1">
+            <div className="w-full border border-gray-700 rounded-xl divide-y py-1">
                 {posts.map((post) => (
                     <BlogCard
                         key={post.slug}
