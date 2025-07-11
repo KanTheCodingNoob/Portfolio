@@ -5,17 +5,18 @@ import remarkGfm from "remark-gfm"
 
 export default function BlogPost() {
     const { slug } = useParams()
-    const [content, setContent] = useState("Loading...")
+
+    const [content, setContent] = useState("")
 
     useEffect(() => {
-        fetch(`/public/blogPosts/${slug}.md`)
+        fetch(`/blogPosts/${slug}.md`)
             .then((res) => res.text())
             .then(setContent)
             .catch(() => setContent("Post not found."))
     }, [slug])
 
     return (
-        <div className="prose max-w-none">
+        <div className="prose-lg">
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
         </div>
     )

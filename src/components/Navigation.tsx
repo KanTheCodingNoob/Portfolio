@@ -1,11 +1,10 @@
-import { Link } from "react-router-dom";
+import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import i18n, {changeLanguage} from "i18next";
 import {useThemeContext} from "../contexts/themeContext.ts";
 
 export default function Navigation() {
     const {t} = useTranslation();
-
     const {theme, setTheme} = useThemeContext();
 
     return (
