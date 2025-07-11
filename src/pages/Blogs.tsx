@@ -1,5 +1,4 @@
 import BlogCard from "../components/BlogCard.tsx";
-import Footer from "../components/Footer.tsx";
 import {useTranslation} from "react-i18next";
 
 export default function Blogs(){
@@ -27,7 +26,6 @@ export default function Blogs(){
                     />
                 ))}
             </div>
-            <Footer />
         </div>
     )
 }

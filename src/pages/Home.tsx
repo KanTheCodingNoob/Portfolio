@@ -1,7 +1,6 @@
 import {Link} from "react-router-dom";
 import {useState} from "react";
 import ExperienceListCard from "../components/ExperienceListCard.tsx";
-import Footer from "../components/Footer.tsx";
 import {useTranslation} from "react-i18next";
 import {useThemeContext} from "../contexts/themeContext.ts";
 
@@ -119,7 +118,6 @@ function Home() {
                     <li><img src="/languageIcon/pytorch.svg" height="60" width="60" alt="PyTorch"/></li>
                 </ul>
 			</div>
-			<Footer />
 		</div>
 	)
 }
