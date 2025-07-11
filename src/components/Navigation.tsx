@@ -33,7 +33,7 @@ export default function Navigation() {
                                 className="cursor-pointer"
                                 onClick={()=> {
                                     localStorage.setItem('lang', 'en')
-                                    navigate(0)
+                                    navigate(".", {replace: true})
                                 }}
                             >🇺🇸 EN</button>}
                         </li>
