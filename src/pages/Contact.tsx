@@ -13,12 +13,12 @@ export default function Contact() {
                 <form className="space-y-4" action="https://formspree.io/f/myzjqwdl" method="post">
                     <h1 className="font-bold text-2xl">{t('formHeader')}</h1>
                     <div className="w-full flex gap-4 justify-between">
-                        <input type="name" name="name" placeholder={t('name')} className="border w-full px-2"/>
-                        <input type="email" name="email" placeholder="Email" className="border w-full px-2"/>
+                        <input type="name" name="name" placeholder={t('name')} className="border border-gray-500 w-full px-2 rounded"/>
+                        <input type="email" name="email" placeholder="Email" className="border border-gray-500 w-full px-2 rounded"/>
                     </div>
                     <textarea
                         name="message"
-                        className="border w-full h-20 px-2"
+                        className="border border-gray-500 w-full h-20 px-2 rounded"
                         placeholder={t('textAreaPlaceholder')}
                     />
                     <button

@@ -6,7 +6,7 @@ import viTranslations from './locales/vi/translations.json';
 
 i18n.use(initReactI18next).init({
 	fallbackLng: 'en',
-	lng: 'en',
+	lng: localStorage.getItem('lang') || 'en',
 	resources: {
 		en: {
 			translations: enTranslations
