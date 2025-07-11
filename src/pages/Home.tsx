@@ -61,12 +61,12 @@ function Home() {
             </div>
             <div className="space-y-4 flex flex-col w-full">
                 <div className={`border border-gray-500 space-x-5 py-3 px-3 rounded-md flex w-full justify-around ${theme === 'dark' ? 'bg-gray-800' : 'bg-gray-300'}`}>
-                    <button className={`cursor-pointer rounded-md w-full h-9 transition-all duration-500  ${tab === 'exp'
+                    <button className={`cursor-pointer rounded-md w-full h-9 transition-all duration-300  ${tab === 'exp'
                         ? theme === 'dark' 
                             ? 'bg-gray-600 text-white'
                             : 'bg-white text-black'
                         : 'bg-transparent'}`} onClick={() => setTab("exp")}>{t('experience')}</button>
-                    <button className={`cursor-pointer rounded-md w-full h-9 transition-all duration-500 ${tab === 'edu'
+                    <button className={`cursor-pointer rounded-md w-full h-9 transition-all duration-300 ${tab === 'edu'
                         ? theme === 'dark'
                             ? 'bg-gray-600 text-white'
                             : 'bg-white text-black'

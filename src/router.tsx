@@ -5,6 +5,7 @@ import Blogs from "./pages/Blogs.tsx";
 import Contact from "./pages/Contact.tsx";
 import LostTraveller from "./pages/LostTraveller.tsx";
 import Layout from "./components/Layout.tsx";
+import BlogPost from "./pages/BlogPost.tsx";
 
 const router = createBrowserRouter([
     {
@@ -14,6 +15,7 @@ const router = createBrowserRouter([
             {index: true, element: <Home />},
             {path: "projects", element: <Projects />},
             {path: "blogs", element: <Blogs />},
+            {path: "blogs/:slug", element: <BlogPost />},
             {path: "contact", element: <Contact />},
             {path: "*", element: <LostTraveller />}
         ]
