@@ -28,7 +28,7 @@ export default function BlogPost() {
                 </svg>
                 <p>{t('blogRedirect')}</p>
             </Link>
-            <img src={`/blogImages/${slug}.png`} alt="slug"/>
+            <img src={`/blogImages/${slug}.png`} className="shadow-2xl shadow-gray-500 rounded-2xl" alt="slug"/>
             <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
         </div>
     )
