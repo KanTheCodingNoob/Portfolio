@@ -25,7 +25,7 @@ export default function Sidebar() {
 
             {/* Sidebar */}
             <aside className={`fixed top-0 left-0 w-40 
-               ${theme === 'dark' ? 'bg-slate-950' : 'bg-gray-400'}
+               ${theme === 'dark' ? 'bg-slate-950' : 'bg-gray-200'}
                ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}
                h-screen z-40 shadow-2xl transition-transform duration-300 transform md:hidden`}>
                 <ul className="flex flex-col space-y-4 px-6 py-4 text-xl mt-12">
