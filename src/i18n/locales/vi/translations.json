@@ -41,5 +41,7 @@
   "formHeader": "Gửi lời nhắn ở đây",
   "name": "Tên",
   "textAreaPlaceholder": "Đừng do dự gửi cơ hội việc làm ở đây, hoặc gửi lời xin chào cũng được",
-  "send": "Gửi"
+  "send": "Gửi",
+
+  "blogRedirect": "Quay lại trang blogs"
 }

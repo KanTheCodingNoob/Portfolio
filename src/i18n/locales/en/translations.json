@@ -42,5 +42,7 @@
   "formHeader": "Leave a message here",
   "name": "Name",
   "textAreaPlaceholder": "Feel free to provide career opportunities here, or simply just say hello",
-  "send": "Send"
+  "send": "Send",
+
+  "blogRedirect": "Back to blogs"
 }
