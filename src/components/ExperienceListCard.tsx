@@ -4,7 +4,7 @@ type CardInfo = {
 	time: string;
 	name: string;
 	role: string;
-	descriptions: string[];
+	descriptions?: string[];
 };
 
 export default function ExperienceListCard({
@@ -34,7 +34,7 @@ export default function ExperienceListCard({
 				<h1 className="font-bold text-xl">{name}</h1>
 				<h2>{role}</h2>
 				<ul className="list-disc ml-4">
-					{descriptions.map((description, index) => (
+					{descriptions?.map((description, index) => (
 						<li key={index}>{description}</li>
 					))}
 				</ul>

@@ -6,7 +6,8 @@
 
   "introHeader": "Xin chào, tên tôi là Khánh An, ✌\uFE0F",
   "introContent1": "Kỹ sư phần mềm 2k5 từ Việt Nam \uD83C\uDDFB\uD83C\uDDF3",
-  "introContent2": "Chuyên phát triển Frontend và Machine Learning",
+  "introContent1.5": "Hiện đang hoạt động ở Úc \uD83C\uDDE6\uD83C\uDDFA",
+  "introContent2": "Chuyên phát triển Backend",
 
   "experience": "Kinh Nghiệm",
   "education": "Giáo Dục",
@@ -18,11 +19,7 @@
     "Thiết kế và áp dụng thêm câu lệnh để kiểm tra hành động của model vào nhiều tình huống khác nhau."
   ],
 
-  "Degree": "Kỹ sư (Kỹ thuật phần mềm)",
-  "EduInfo": [
-    "Chuyên ngành phụ: Trí tuệ nhân tạo và học máy",
-    "GPA: 3.4/4.0"
-  ],
+  "Degree": "Bằng kỹ sư (Kỹ thuật phần mềm)",
 
   "technologies": "Công nghệ",
   "languages": "Ngôn ngữ",

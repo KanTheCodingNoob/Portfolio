@@ -6,7 +6,8 @@
 
   "introHeader": "Hiya, my name is Khanh An, ✌\uFE0F",
   "introContent1": "20 years old software engineer from Vietnam \uD83C\uDDFB\uD83C\uDDF3",
-  "introContent2": "Specialise in Frontend Development and Machine Learning",
+  "introContent1.5": "Currently residing in Australia \uD83C\uDDE6\uD83C\uDDFA",
+  "introContent2": "Specialise in Backend Development",
 
   "experience": "Experience",
   "education": "Education",
@@ -18,11 +19,7 @@
     "Designed and applied additional prompts to test model behavior in varied contexts."
   ],
 
-  "degree": "Bachelor of Engineering (Software Engineering)",
-  "EduInfo": [
-    "Minor: Artificial Intelligence and Machine Learning",
-    "GPA: 3.4/4.0"
-  ],
+  "Degree": "Bachelor of Engineering (Software Engineering)",
 
   "technologies": "Technologies",
   "languages": "Languages",
