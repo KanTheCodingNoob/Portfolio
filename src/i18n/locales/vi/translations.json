@@ -12,7 +12,7 @@
   "experience": "Kinh Nghiệm",
   "education": "Giáo Dục",
 
-  "DAJobTitle": "Review Phản Hồi LLM",
+  "DAJobTitle": "Đánh Giá Phản Hồi LLM (Contract)",
   "DADescription": [
     "So sánh và đánh giá phản hồi của hai LLM để kiểm tra độ chính xác, lưu lạc và hợp lý của chúng.",
     "Đưa đánh giá chi tiết về phản hồi của model, xem xét điểm mạnh và điểm cần chú ý.",
