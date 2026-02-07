@@ -109,22 +109,18 @@ function Home() {
 			</div>
 			<div className="flex flex-col items-center w-full space-y-4">
 				<h1 className="font-bold text-4xl">{t('technologies')}</h1>
-				<h2 className="font-bold text-2xl">{t('languages')}</h2>
-				<ul className="flex space-x-4">
-					<li><img src="/languageIcon/cpp.png" height="60" width="60" alt="C++"/></li>
-					<li><img src="/languageIcon/rust.png" height="60" width="60" alt="Rust"/></li>
-					<li><img src="/languageIcon/typescript.png" height="60" width="60" alt="Typescript"/></li>
-					<li><img src="/languageIcon/python.png" height="60" width="60" alt="Python"/></li>
-					<li><img src="/languageIcon/java.png" height="60" width="60" alt="Java"/></li>
+				<ul className="flex flex-wrap space-x-4 space-y-2">
+					<li><img src="/TechnologyIcon/cpp.png" height="60" width="60" alt="C++"/></li>
+					<li><img src="/TechnologyIcon/javascript.png" height="60" width="60" alt="Javascript"/></li>
+					<li><img src="/TechnologyIcon/typescript.png" height="60" width="60" alt="Typescript"/></li>
+					<li><img src="/TechnologyIcon/python.png" height="60" width="60" alt="Python"/></li>
+					<li><img src="/TechnologyIcon/java.png" height="60" width="60" alt="Java"/></li>
+					<li><img src="/TechnologyIcon/react.png" height="60" width="60" alt="React"/></li>
+					<li><img src="/TechnologyIcon/tailwind.png" height="60" width="60" alt="Tailwind"/></li>
+					<li><img src="/TechnologyIcon/spring.png" height="60" width="60" alt="Spring"/></li>
+					<li><img src="/TechnologyIcon/sql.png" height="60" width="60" alt="SQL"/></li>
+					<li><img src="/TechnologyIcon/docker.png" height="60" width="60" alt="Docker"/></li>
 				</ul>
-				<h2 className="font-bold text-2xl">Frameworks</h2>
-				<ul className="flex space-x-4">
-					<li><img src="/languageIcon/react.png" height="60" width="60" alt="React"/></li>
-					<li><img src="/languageIcon/tauri.png" height="60" width="60" alt="Tauri"/></li>
-					<li><img src="/languageIcon/spring.png" height="60" width="60" alt="Spring"/></li>
-					<li><img src="/languageIcon/tailwind.png" height="60" width="60" alt="Tailwind"/></li>
-                    <li><img src="/languageIcon/pytorch.svg" height="60" width="60" alt="PyTorch"/></li>
-                </ul>
 			</div>
 		</div>
 	)
