@@ -1,23 +1,24 @@
-import {Link, useNavigate} from "react-router-dom";
+import {Link} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 import i18n from "i18next";
 import {useThemeContext} from "../contexts/themeContext.ts";
+import Sidebar from "./Sidebar.tsx";
 
 export default function Navigation() {
     const {t} = useTranslation();
     const {theme, setTheme} = useThemeContext();
-    const navigate = useNavigate();
 
     return (
         <nav className="flex justify-center w-full h-16 text-2xl fixed top-0 left-0 px-2 backdrop-blur z-50">
-            <div className="flex justify-between items-center w-240">
-                <div>
-                    <ul className="flex space-x-6 items-center justify-between text-2xl">
+            <div className="flex justify-between items-center w-full">
+                <div className="flex items-center">
+                    <ul className="hidden md:flex space-x-6 items-center justify-between text-2xl">
                         <li><Link to={"/"}>{t('home')}</Link></li>
                         <li><Link to={"/projects"}>{t('projects')}</Link></li>
                         <li><Link to={"/blogs"}>{t('blogs')}</Link></li>
                         <li><Link to={"/contact"}>{t('contact')}</Link></li>
                     </ul>
+                    <Sidebar />
                 </div>
                 <div>
                     <ul className="flex space-x-4 items-center justify-between">
@@ -25,15 +26,13 @@ export default function Navigation() {
                             {i18n.language === 'en' && <button
                                 className="cursor-pointer"
                                 onClick={()=> {
-                                    localStorage.setItem('lang', 'vi')
-                                    navigate(0)
+                                    i18n.changeLanguage("vi").then(()=>localStorage.setItem('lang', 'vi'));
                                 }}
                             >🇻🇳 VI</button>}
                             {i18n.language === 'vi' && <button
                                 className="cursor-pointer"
                                 onClick={()=> {
-                                    localStorage.setItem('lang', 'en')
-                                    navigate(0)
+                                    i18n.changeLanguage("en").then(()=>localStorage.setItem('lang', 'en'));
                                 }}
                             >🇺🇸 EN</button>}
                         </li>

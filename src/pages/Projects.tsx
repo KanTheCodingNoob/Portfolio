@@ -1,5 +1,4 @@
 import ProjectCard from "../components/ProjectCard.tsx";
-import Footer from "../components/Footer.tsx";
 import {useTranslation} from "react-i18next";
 
 export default function Projects() {
@@ -24,7 +23,6 @@ export default function Projects() {
                     link={[{title: "Github", link: "https://github.com/KanTheCodingNoob/thao-management"}]}
                 />
             </div>
-            <Footer />
         </div>
     )
 }

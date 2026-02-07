@@ -1,4 +1,3 @@
-import Footer from "../components/Footer.tsx";
 import {useTranslation} from "react-i18next";
 import {useThemeContext} from "../contexts/themeContext.ts";
 
@@ -35,7 +34,6 @@ export default function Contact() {
                     <h2>{t('location')}: {t('actualLocation')}</h2>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }
